@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1351/1351861.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Random doggos</title>
 </head>
 <body>
-    <h1>Random Doggos</h1>
-    <img class="randomDog1" alt="Foto de perro">
-    <img class="randomDog2" alt="Foto de perro">
-    <img class="randomDog3" alt="Foto de perro">
-    <button class="newDog">Nuevo perro</button>
+    <header class="header">
+        <img class="header__img" src="https://cdn-icons-png.flaticon.com/512/1351/1351861.png" alt="">
+        <h1 class="header__title"> Random Dogs</h1>
+    </header>
+    
+    <main>
+        <section class="favoriteDogs">
+            <h2 class="favoriteDogs__title">Favoritos <i class="ri-heart-line"></i></h2>
+            <div class="favoriteDogs__content">
+                <article class="favoriteDog">
+                    <img class="favoriteDog__img" alt="">
+                    <i class="ri-delete-bin-line favoriteDog__iconDelete"></i>
+                </article>
+            </div>
+        </section>
+
+        <section class="randomDogs" id="randomDogs">
+            <h2 class="randomDogs__title">Doggos <i class="ri-star-line"></i></i></h2>
+            <div class="randomDogs__content">
+                <article class="randomDog">
+                    <img class="randomDog__img" alt="">
+                    <i class="ri-heart-fill randomDog__iconFav"></i>
+                </article>                
+            </div>
+            <div class="randomDogs__getNew">
+                <a href="#randomDogs">Get more Dogs!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Made with 🍄 by: Daniel Vera Acero
+    </footer>
 
     <script src="./main.js"></script>
 </body>
