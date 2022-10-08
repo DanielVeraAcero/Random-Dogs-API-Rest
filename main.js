@@ -64,7 +64,8 @@ async function postFavoriteDog(id) {
             <img src="https://http.cat/${status}" alt="">
         `
     } else {
-        removeChildNodes(favoriteDogContainer);
+        // removeChildNodes(favoriteDogContainer);
+        favoriteDogContainer.innerHTML = "";
         fetchFavoriteDog();
     }
 }
@@ -81,7 +82,8 @@ async function deleteFavoriteDog(id) {
             <img src="https://http.cat/${status}" alt="">
         `
     } else {
-        removeChildNodes(favoriteDogContainer);
+        // removeChildNodes(favoriteDogContainer);
+        favoriteDogContainer.innerHTML = "";
         fetchFavoriteDog();
     }
 }
